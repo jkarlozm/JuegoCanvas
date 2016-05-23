@@ -1,0 +1,81 @@
+/*Agregamos fuente para el encabezado*/
+@font-face{
+	font-family: halo;
+	src: url('../fonts/halo.ttf'), url('../fonts/halo.otf'), url('../fonts/halo.eot');
+}
+
+/*Reseteo de margen y pading en la página y asignamos propiedades de caja*/
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgba(184,184,184,0.15);
+}
+
+div.contenedor {
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin: 0px auto;
+	padding: 20px 0px;	
+	background-color: #fff;	
+}
+
+div.social{	
+	position: fixed;
+	left: 3px;
+	top: 200px;
+	z-index: 200;
+}
+
+div.social ul{
+	list-style: none;
+}
+
+div.social ul li a{
+	display: inline-block;
+	color: #fff;
+	font-size: 25px;	
+	background: #000;
+	border-radius: 8px;
+	padding: 10px 10px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+div.social ul li a.fa-facebook-square{ background: #3b5998;}
+div.social ul li a.fa-twitter-square{ background: #00abf0;}
+div.social ul li a.fa-github-square{ background: #ae181f}
+div.social ul li a.fa-envelope-square{ background: #666}
+
+div.social ul li a:hover{
+	padding: 10px 30px;
+	background: #000;
+}
+
+div.titulo{
+	margin-bottom: 30px;
+}
+
+div.titulo p{
+	text-align: center;
+	font-family: halo;
+	font-size: 50px;	
+}
+
+figure {
+	width: 80%;	
+	margin: 0px auto;
+}
+
+canvas#game{
+	width: 100%;
+}
